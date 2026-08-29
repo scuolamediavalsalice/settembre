@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 18 settembre</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pop: {
+                            yellow: '#FFE600',
+                            pink: '#FF007A',
+                            mint: '#00F5D4',
+                            dark: '#121212',
+                            gray: '#222222',
+                            light: '#F5F5F7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Impact', 'Arial Black', 'sans-serif'],
+                        body: ['ui-sans-serif', 'system-ui', 'sans-serif'],
+                        mono: ['ui-monospace', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1.5px #FFE600;
+            color: transparent;
+        }
+        .glow-box {
+            box-shadow: 8px 8px 0px 0px #121212;
+        }
+        .glow-pink {
+            box-shadow: 8px 8px 0px 0px #FF007A;
+        }
+        .glow-mint {
+            box-shadow: 8px 8px 0px 0px #00F5D4;
+        }
+        .glow-yellow {
+            box-shadow: 8px 8px 0px 0px #FFE600;
+        }
+    </style>
+</head>
+<body class="bg-pop-dark text-white font-body antialiased overflow-x-hidden">
+
+    <!-- SLIDE 1: COPERTINA STELLARE (SCURO) -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-dark text-white relative border-b-8 border-pop-yellow">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-white/20 pb-4">
+            <span class="text-xs md:text-sm uppercase font-black tracking-widest text-pop-yellow bg-white/10 px-3 py-1 rounded-full">
+                Scuola Media Valsalice
+            </span>
+            <span class="text-xs md:text-sm font-mono text-gray-400">05 / SETTIMANA 1</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="my-auto text-center max-w-4xl mx-auto space-y-6 w-full">
+            <div class="inline-block p-5 bg-pop-yellow text-pop-dark border-4 border-black glow-mint -rotate-3">
+                <!-- Icona Stella Pop -->
+                <svg class="w-16 h-16 text-pop-dark mx-auto animate-bounce" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+            </div>
+
+            <h1 class="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-none">
+                La Mappa della <br><span class="text-pop-yellow text-stroke">Gratitudine</span>
+            </h1>
+
+            <p class="text-lg md:text-2xl font-bold text-gray-300 max-w-2xl mx-auto leading-tight">
+                Non è la felicità che ci rende grati: è la gratitudine che ci rende felici.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-white/10 text-xs font-mono text-gray-400">
+            <span>La Meraviglia della Settimana</span>
+            <a href="#slide-2" class="text-pop-yellow font-black hover:underline flex items-center gap-1 uppercase">
+                Accendi le Stelle &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: IL GANCIO (GIALLO) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-yellow text-pop-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-black/20 pb-4">
+            <span class="text-xs md:text-sm font-black uppercase tracking-wider text-pop-dark">Domanda</span>
+            <span class="text-xs md:text-sm font-mono text-black/60">Slide 2 di 4</span>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="my-auto max-w-5xl mx-auto grid md:grid-cols-12 gap-8 items-center">
+            <!-- Testo Guida -->
+            <div class="md:col-span-7 space-y-5">
+                <span class="bg-black text-pop-yellow text-xs font-black uppercase px-3 py-1">Prospettiva del venerdì</span>
+                <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none">
+                    Siamo cacciatori di <span class="bg-black text-white px-2">difetti</span> o di <span class="bg-black text-pop-mint px-2">meraviglia</span>?
+                </h2>
+                
+                <div class="text-base md:text-lg font-medium text-black/80 leading-relaxed space-y-3">
+                    <p>
+                        Alla fine della settimana lavorativa e scolastica è facile ricordare solo le cose andate male: un brutto voto, un litigio, la fatica.
+                    </p>
+                    <p>
+                        Allenare lo sguardo alla <strong>GRATITUDINE</strong> significa fare come gli antichi navigatori: alzare gli occhi al cielo e cercare le stelle per orientarsi, invece di guardare solo il buio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Box Concetto Chiave -->
+            <div class="md:col-span-5 bg-black text-white p-8 rounded-none border-4 border-pop-pink glow-pink space-y-4">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-pop-pink block">// IL SEGRETO SALESIANO</span>
+                <p class="text-lg font-black uppercase text-pop-yellow leading-tight">
+                    "In ogni giovane, anche nel più disgraziato, c'è un punto accessibile al bene. Il primo dovere è cercare questo punto e farne tesoro."
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-black/10 text-xs font-bold text-black uppercase">
+            <a href="#slide-1" class="hover:underline">&larr; Slide Precedente</a>
+            <a href="#slide-3" class="bg-black text-pop-yellow px-4 py-2 font-black hover:bg-pop-pink hover:text-white transition">
+                Avvia Mappa Interattiva &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: COSTELLAZIONE INTERATTIVA (BIANCO) -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-light text-pop-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-black/20 pb-4">
+            <span class="text-xs md:text-sm font-mono font-bold uppercase tracking-wider text-black">Costellazione di Classe</span>
+            <span class="text-xs md:text-sm font-mono text-black/60">Slide 3 di 4</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="my-auto max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            <!-- Istruzioni -->
+            <div class="md:col-span-5 space-y-6">
+                <div>
+                    <span class="bg-black text-pop-yellow px-3 py-1 text-xs font-black uppercase">Mappa della Settimana</span>
+                    <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight mt-2 text-black">Accendi 5 Stelle</h2>
+                </div>
+
+                <p class="text-black font-medium text-base leading-relaxed">
+                    Clicca sulle stelle della costellazione a destra per scoprire le 5 categorie di gratitudine. Poi, scrivi sul quaderno <strong>almeno 2 cose</strong> per cui ringraziare questa settimana.
+                </p>
+
+                <!-- Box Dettaglio Stella -->
+                <div id="star-detail-box" class="p-5 rounded-xl bg-pop-yellow border-4 border-black text-black font-mono font-bold text-sm min-h-[90px] flex items-center justify-center text-center glow-box">
+                    Clicca una stella a destra per rivelare la sfida!
+                </div>
+            </div>
+
+            <!-- Interactive Star Map Grid -->
+            <div class="md:col-span-7 bg-black p-6 md:p-8 rounded-3xl border-4 border-black glow-box text-center space-y-6">
+                <span class="text-xs font-mono uppercase text-pop-mint tracking-widest block font-bold">// COSTELLAZIONE DEL VENERDÌ</span>
+
+                <!-- Stelle Interattive -->
+                <div class="grid grid-cols-3 gap-4 my-6">
+                    <button onclick="revealStar(1, '1. PERSONA: Un compagno/a o prof che ti ha aiutato o strappato un sorriso.')" class="star-btn p-4 bg-pop-gray border-2 border-white/20 hover:border-pop-yellow flex flex-col items-center gap-2 transition group">
+                        <svg class="w-8 h-8 text-gray-500 group-hover:text-pop-yellow transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span class="text-xs font-mono font-bold text-white uppercase">01. Persona</span>
+                    </button>
+
+                    <button onclick="revealStar(2, '2. MOMENTO: Un attimo divertente vissuto durante l\'intervallo o in classe.')" class="star-btn p-4 bg-pop-gray border-2 border-white/20 hover:border-pop-yellow flex flex-col items-center gap-2 transition group">
+                        <svg class="w-8 h-8 text-gray-500 group-hover:text-pop-yellow transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span class="text-xs font-mono font-bold text-white uppercase">02. Momento</span>
+                    </button>
+
+                    <button onclick="revealStar(3, '3. OSTACOLO VINTO: Una difficoltà o verifica superata con impegno.')" class="star-btn p-4 bg-pop-gray border-2 border-white/20 hover:border-pop-yellow flex flex-col items-center gap-2 transition group">
+                        <svg class="w-8 h-8 text-gray-500 group-hover:text-pop-yellow transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span class="text-xs font-mono font-bold text-white uppercase">03. Ostacolo</span>
+                    </button>
+
+                    <button onclick="revealStar(4, '4. SCOPERTA: Una cosa nuova imparata in materia o su te stesso.')" class="star-btn p-4 bg-pop-gray border-2 border-white/20 hover:border-pop-yellow flex flex-col items-center gap-2 transition group col-span-1 col-start-1 md:col-start-2">
+                        <svg class="w-8 h-8 text-gray-500 group-hover:text-pop-yellow transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span class="text-xs font-mono font-bold text-white uppercase">04. Scoperta</span>
+                    </button>
+
+                    <button onclick="revealStar(5, '5. REGALO INVISIBILE: La salute, il cibo, la casa o il sorriso di un amico.')" class="star-btn p-4 bg-pop-gray border-2 border-white/20 hover:border-pop-yellow flex flex-col items-center gap-2 transition group col-span-1">
+                        <svg class="w-8 h-8 text-gray-500 group-hover:text-pop-yellow transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span class="text-xs font-mono font-bold text-white uppercase">05. Dono</span>
+                    </button>
+                </div>
+
+                <div class="text-xs font-mono uppercase text-gray-400 font-bold">
+                    Stelle accese: <span id="star-count" class="text-pop-yellow text-lg font-black">0</span> / 5
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-black/20 text-xs font-mono text-black">
+            <a href="#slide-2" class="hover:underline">&larr; Slide Precedente</a>
+            <a href="#slide-4" class="font-black uppercase hover:underline">Benedizione e salute &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: PAROLA GUIDA E SALUTO WEEKEND (ROSA) -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-pink text-black">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-black/20 pb-4">
+            <span class="text-xs md:text-sm font-black uppercase tracking-wider">Benedizione e Salute</span>
+            <span class="text-xs md:text-sm font-mono text-black/60">Slide 4 di 4</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="my-auto max-w-4xl mx-auto text-center space-y-8">
+            <div class="inline-block bg-black text-pop-yellow font-mono text-xs uppercase px-3 py-1 font-bold">
+                Spirito Salesiano
+            </div>
+
+            <blockquote class="space-y-4">
+                <p class="text-3xl md:text-6xl font-black uppercase tracking-tight leading-none text-black">
+                    "Siate allegri, fate il bene e lasciate cantare i passeri!"
+                </p>
+                <cite class="block text-xs md:text-sm text-black font-mono font-bold tracking-widest uppercase">
+                    — San Giovanni Bosco
+                </cite>
+            </blockquote>
+
+            <!-- Pensiero Finale Salesiano -->
+            <div class="bg-black text-white p-6 rounded-2xl max-w-xl mx-auto text-left space-y-2 border-2 border-pop-yellow">
+                <span class="text-pop-mint text-xs font-mono font-bold uppercase">// Impegno per il Weekend</span>
+                <p class="text-base font-medium text-gray-200">
+                    Porta questa gratitudine nel tuo fine settimana. Ringrazia i tuoi genitori, un amico o te stesso per la strada fatta questa settimana.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-black/20 text-xs font-bold uppercase">
+            <a href="#slide-3" class="hover:underline">&larr; Slide Precedente</a>
+            <span class="bg-black text-pop-yellow px-3 py-1 font-black">Buon Fine Settimana! 🌟</span>
+        </div>
+    </section>
+
+    <!-- SCRIPT INTERATTIVO STELLE -->
+    <script>
+        let litStars = new Set();
+
+        function revealStar(index, text) {
+            const detailBox = document.getElementById('star-detail-box');
+            detailBox.textContent = text;
+            
+            // Animazione Pop
+            detailBox.classList.add('scale-105');
+            setTimeout(() => detailBox.classList.remove('scale-105'), 300);
+
+            // Accendi stella visivamente in stile Pop
+            const buttons = document.querySelectorAll('.star-btn');
+            const targetBtn = buttons[index - 1];
+            const svg = targetBtn.querySelector('svg');
+
+            targetBtn.classList.remove('bg-pop-gray', 'border-white/20');
+            targetBtn.classList.add('bg-pop-yellow', 'border-black');
+            
+            svg.classList.remove('text-gray-500');
+            svg.classList.add('text-black');
+
+            const span = targetBtn.querySelector('span');
+            span.classList.remove('text-white');
+            span.classList.add('text-black');
+
+            litStars.add(index);
+            document.getElementById('star-count').textContent = litStars.size;
+        }
+    </script>
+</body>
+</html>

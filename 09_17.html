@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 17 settembre</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pop: {
+                            yellow: '#FFE600',
+                            pink: '#FF007A',
+                            mint: '#00F5D4',
+                            dark: '#121212',
+                            gray: '#222222',
+                            light: '#F5F5F7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Impact', 'Arial Black', 'sans-serif'],
+                        body: ['ui-sans-serif', 'system-ui', 'sans-serif'],
+                        mono: ['ui-monospace', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1.5px #FFE600;
+            color: transparent;
+        }
+        .glow-box {
+            box-shadow: 8px 8px 0px 0px #00F5D4;
+        }
+        .glow-pink {
+            box-shadow: 8px 8px 0px 0px #FF007A;
+        }
+    </style>
+</head>
+<body class="bg-pop-dark text-white font-body antialiased overflow-x-hidden">
+
+        <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-dark relative border-b-8 border-pop-mint">
+                <div class="flex justify-between items-center border-b border-white/20 pb-4">
+            <span class="text-xs md:text-sm uppercase font-black tracking-widest text-pop-mint bg-white/10 px-3 py-1 rounded-full">
+                Scuola media Valsalice
+            </span>
+            <span class="text-xs md:text-sm font-mono text-gray-400">04 / SETTIMANA 1</span>
+        </div>
+
+                <div class="my-auto max-w-5xl mx-auto space-y-6 text-left w-full">
+            <div class="inline-block bg-pop-mint text-black text-xs md:text-sm font-black uppercase px-3 py-1 -rotate-2">
+                Palestra di Concentrazione
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none">
+                L'ATTENZIONE<br><span class="text-pop-yellow text-stroke">SOSTENUTA</span>
+            </h1>
+
+            <p class="text-xl md:text-3xl font-bold text-gray-300 max-w-2xl leading-tight">
+                "Non puoi spingere l'erba a crescere tirandola."<br>
+                <span class="text-pop-mint text-lg md:text-2xl font-normal mt-2 block">Coltivare la mente richiede il superpotere dell'attesa.</span>
+            </p>
+        </div>
+
+                <div class="flex justify-between items-center pt-4 border-t border-white/10 text-xs font-mono text-gray-400">
+            <span>Allenare la pazienza</span>
+            <a href="#slide-2" class="text-pop-mint font-black hover:underline flex items-center gap-1 uppercase">
+                Metti alla prova il cervello &darr;
+            </a>
+        </div>
+    </section>
+
+        <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-yellow text-pop-dark">
+                <div class="flex justify-between items-center border-b border-black/20 pb-4">
+            <span class="text-xs md:text-sm font-black uppercase tracking-wider text-pop-dark">La pazienza</span>
+            <span class="text-xs md:text-sm font-mono text-black/60">Slide 2 di 4</span>
+        </div>
+
+                <div class="my-auto max-w-5xl mx-auto grid md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-7 space-y-5">
+                <span class="bg-black text-pop-yellow text-xs font-black uppercase px-3 py-1">Fast-Forward vs Natura</span>
+                <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none">
+                    Siamo abituati al tasto <span class="bg-black text-white px-2">"Salta"</span>
+                </h2>
+                
+                <div class="text-base md:text-lg font-medium text-black/80 leading-relaxed space-y-3">
+                    <p>
+                        Se la sigla di una serie dura più di tre secondi, premiamo subito "Salta introduzione". Se un cartone non ci cattura nei primi istanti, cambiamo canale.
+                    </p>
+                    <p>
+                        <strong>Il problema?</strong> Ci siamo abituati a volere tutto e subito, e appena qualcosa va a rilento perdiamo la pazienza.
+                    </p>
+                </div>
+            </div>
+
+                        <div class="md:col-span-5 bg-black text-white p-8 rounded-none border-4 border-pop-pink glow-pink space-y-4">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-pop-pink block">// REGOLA BOTANICA E COGNITIVA</span>
+                <p class="text-xl font-black uppercase text-pop-yellow leading-tight">
+                    Le cose più pure richiedono tempo, proprio come un albero che impiega anni per dare frutti.
+                </p>
+                <span class="block text-xs text-gray-400 font-mono">— Custodisci il tempo della crescita</span>
+            </div>
+        </div>
+
+                <div class="flex justify-between items-center pt-4 border-t border-black/10 text-xs font-bold text-black uppercase">
+            <a href="#slide-1" class="hover:underline">&larr; Indietro</a>
+            <a href="#slide-3" class="bg-black text-pop-yellow px-4 py-2 font-black hover:bg-pop-pink hover:text-white transition">
+                Laboratorio di attenzione &rarr;
+            </a>
+        </div>
+    </section>
+
+        <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-dark text-white">
+                <div class="flex justify-between items-center border-b border-white/20 pb-4">
+            <span class="text-xs md:text-sm font-mono font-bold uppercase tracking-wider text-pop-mint">Visione e riflessione</span>
+            <span class="text-xs md:text-sm font-mono text-gray-400">Slide 3 di 4</span>
+        </div>
+
+                <div class="my-auto max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-5 space-y-6">
+                <div>
+                    <span class="bg-pop-mint text-black px-3 py-1 text-xs font-black uppercase">Video di Riflessione</span>
+                    <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight mt-2">L'Arte di aspettare</h2>
+                </div>
+
+                <ol class="space-y-4 text-gray-300 font-medium text-base">
+                    <li class="flex items-start gap-4">
+                        <span class="w-8 h-8 bg-pop-mint text-black font-black flex items-center justify-center text-lg flex-shrink-0">1</span>
+                        <span>Guarda con attenzione il video insieme alla classe senza distrarti.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="w-8 h-8 bg-pop-mint text-black font-black flex items-center justify-center text-lg flex-shrink-0">2</span>
+                        <span>Rifletti su quante volte cerchiamo risposte o risultati immediati invece di dare tempo al processo.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="w-8 h-8 bg-pop-mint text-black font-black flex items-center justify-center text-lg flex-shrink-0">3</span>
+                        <span><strong>Scrivi un obiettivo personale che richiede tempo e dedizione costante.</strong></span>
+                    </li>
+                </ol>
+            </div>
+
+                        <div class="md:col-span-7 bg-pop-gray p-4 md:p-6 rounded-3xl border-2 border-pop-mint glow-box">
+                <a href="https://www.youtube.com/watch?v=11p9Eg5d6gs" target="_blank" rel="noopener noreferrer" class="group relative block w-full aspect-video rounded-2xl overflow-hidden border border-white/10">
+                                        <img src="https://img.youtube.com/vi/11p9Eg5d6gs/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/11p9Eg5d6gs/hqdefault.jpg'" alt="Anteprima Video Pazienza" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    
+                                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                    
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-20 h-20 bg-pop-yellow group-hover:bg-pop-pink text-black group-hover:text-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-all duration-300">
+                            <svg class="w-10 h-10 translate-x-1 fill-current" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                                        <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-xs font-mono bg-black/80 px-4 py-2 rounded-xl backdrop-blur-sm">
+    
+                        <span class="text-pop-mint font-bold uppercase">Guarda il video su YouTube</span>
+                        <span class="text-gray-300">&nearr; Apri link</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+                <div class="flex justify-between items-center pt-4 border-t border-white/10 text-xs font-mono text-gray-400">
+            <a href="#slide-2" class="hover:underline">&larr; Indietro</a>
+            <a href="#slide-4" class="text-pop-mint font-black uppercase hover:underline">Pensiero della giornata &rarr;</a>
+        </div>
+    </section>
+
+        <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-pink text-black">
+                <div class="flex justify-between items-center border-b border-black/20 pb-4">
+            <span class="text-xs md:text-sm font-black uppercase tracking-wider">Il valore del tempo</span>
+            <span class="text-xs md:text-sm font-mono text-black/60">Slide 4 di 4</span>
+        </div>
+
+                <div class="my-auto max-w-4xl mx-auto text-center space-y-8">
+            <div class="inline-block bg-black text-pop-yellow font-mono text-xs uppercase px-3 py-1 font-bold">
+                
+            </div>
+
+            <blockquote class="space-y-4">
+                <p class="text-3xl md:text-6xl font-black uppercase tracking-tight leading-none text-black">
+                    Signore, insegnami ad avere pazienza.
+                </p>            </blockquote>
+
+                        <div class="bg-black text-white p-6 rounded-2xl max-w-xl mx-auto text-left space-y-2 border-2 border-pop-yellow">
+                <span class="text-pop-mint text-xs font-mono font-bold uppercase">//</span>
+                <p class="text-base font-medium text-gray-200">
+                    Se oggi ti senti in ritardo, se un voto non è stato quello sperato o se un'amicizia richiede fatica, ricorda: l'attenzione e i risultati migliori germogliano con pazienza.
+                </p>
+            </div>
+        </div>
+
+                <div class="flex justify-between items-center pt-4 border-t border-black/20 text-xs font-bold uppercase">
+            <a href="#slide-3" class="hover:underline">&larr; Indietro</a>
+            <span class="bg-black text-pop-yellow px-3 py-1 font-black">Buona giornata!</span>
+        </div>
+    </section>
+
+</body>
+</html>

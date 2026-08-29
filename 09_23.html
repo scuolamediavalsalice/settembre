@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno Salesiano - Il Vedere di Gesù</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#050811',        /* Deep Space Black */
+                            card: '#0D1527',      /* Dark HUD Card */
+                            cyan: '#00F0FF',      /* Neon Cyan */
+                            lime: '#39FF14',      /* Electric Lime */
+                            pink: '#FF007F',      /* Neon Magenta */
+                            gold: '#FFD700'
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['ui-monospace', 'monospace'],
+                        sans: ['Trebuchet MS', 'Arial Black', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .neon-glow {
+            filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.6));
+        }
+        .neon-glow-pink {
+            filter: drop-shadow(0 0 10px rgba(255, 0, 127, 0.6));
+        }
+        .hud-border {
+            border: 2px solid #00F0FF;
+            box-shadow: 4px 4px 0px 0px #FF007F;
+        }
+    </style>
+</head>
+<body class="bg-cyber-bg text-white font-sans antialiased overflow-x-hidden selection:bg-cyber-cyan selection:text-black">
+
+    <!-- SLIDE 1: COPERTINA E TITOLO -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-cyber-bg relative border-b-4 border-cyber-cyan">
+        <!-- Header HUD -->
+        <div class="flex justify-between items-center border-b border-cyber-cyan/30 pb-4 font-mono text-xs md:text-sm">
+            <span class="bg-cyber-cyan text-black px-3 py-1 font-black uppercase tracking-widest rounded-sm">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="text-cyber-lime font-bold tracking-widest animate-pulse">
+                [ SETTIMANA 02 // MERCOLEDì ]
+            </span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="my-auto text-center max-w-4xl mx-auto space-y-6">
+            
+            <!-- Graphic Element: Visore Neon con Immagine di Gesù da Wikipedia -->
+            <div class="relative w-full max-w-md h-44 mx-auto bg-cyber-card rounded-2xl hud-border flex items-center justify-around px-6 overflow-hidden">
+                <!-- Griglia di Sfondo -->
+                <div class="absolute inset-0 bg-[radial-gradient(#00F0FF_1px,transparent_1px)] [background-size:16px_16px] opacity-10"></div>
+                
+                <!-- Immagine di Gesù (Wikipedia Commons) -->
+                <div class="relative z-10 flex flex-col items-center">
+                    <div class="w-20 h-20 rounded-full border-2 border-cyber-cyan overflow-hidden neon-glow bg-black flex items-center justify-center">
+                        <img 
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60NIpcfDFPs9ywP2_bOMx8KI6bUqMnXa24_n-Yy37Sul5iTT0Y5YZiS4&s=10" 
+                            alt="Gesù Cristo" 
+                            class="w-full h-full object-cover object-top contrast-125 brightness-90"
+                        >
+                    </div>
+                    <span class="text-[10px] font-mono text-cyber-cyan font-bold tracking-widest mt-1">GESÙ</span>
+                </div>
+
+                <!-- Raggio di Luce / Visore Scanner Interattivo -->
+                <div class="relative z-10 flex-1 flex flex-col items-center justify-center px-2">
+                    <div class="w-full h-1 bg-gradient-to-r from-cyber-cyan via-cyber-lime to-cyber-pink animate-pulse"></div>
+                    <span class="text-[9px] font-mono text-cyber-lime mt-1 tracking-tighter">TARGET_LOCKED</span>
+                </div>
+
+                <!-- Sagoma Vettoriale Ragazzo (Destra) -->
+                <div class="relative z-10 flex flex-col items-center">
+                    <svg class="w-16 h-16 text-cyber-pink neon-glow-pink" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/>
+                        <path d="M12 14c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <span class="text-[10px] font-mono text-cyber-pink font-bold tracking-widest mt-1">PERSONA</span>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-7xl font-black uppercase tracking-tight leading-none text-white">
+                IL "VEDERE" DI GESÙ: <br><span class="text-cyber-cyan underline decoration-cyber-pink">RICONOSCERE LA PERSONA</span>
+            </h1>
+
+            <p class="text-lg md:text-2xl font-mono text-cyber-lime font-bold">
+                "Guardare non basta: serve accorgersi dell'altro."
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-white/10 font-mono text-xs text-gray-400">
+            <span>MOOD: VISIONE PROFONDA</span>
+            <a href="#slide-2" class="text-cyber-cyan font-bold hover:underline flex items-center gap-1 uppercase">
+                ATTIVA SGUARDO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: IL GANCIO (1-2 MIN) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-cyber-card text-white">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-cyber-cyan/30 pb-4 font-mono text-xs">
+            <span class="text-cyber-lime font-bold uppercase tracking-wider">// ACCORGERSI</span>
+            <span class="text-gray-400">Slide 2 di 4</span>
+        </div>
+
+        <!-- Grid Content -->
+        <div class="my-auto max-w-5xl mx-auto grid md:grid-cols-12 gap-8 items-center">
+            <!-- Left Info -->
+            <div class="md:col-span-7 space-y-6">
+                <span class="bg-cyber-pink text-white font-mono font-bold text-xs px-3 py-1 uppercase">
+                    NON PAssare Oltre
+                </span>
+                <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                    Smetti di guardare<br>la folla. <br><span class="text-cyber-cyan">Guarda i Volti.</span>
+                </h2>
+                
+                <p class="text-base md:text-lg font-mono text-gray-300 leading-relaxed">
+                    Nei Vangeli si ripete spesso una frase bellissima:<br> <strong class="text-cyber-lime">"Gesù lo fissò e lo amò"</strong>. Gesù non guardava le persone in modo generico: vedeva i singoli volti, si accorgeva di chi era triste, stanco o invisibile.
+                </p>
+                <p class="text-base md:text-lg font-mono text-gray-300 leading-relaxed">
+                    Oggi vogliamo allenare lo stesso sguardo: smettere di "passare oltre" con gli occhi e imparare a vedere davvero chi ci siede accanto.
+                </p>
+            </div>
+
+            <!-- Right Box: Visual Icon & Concept Card -->
+            <div class="md:col-span-5 bg-cyber-bg p-8 rounded-2xl hud-border space-y-4 text-center">
+                <div class="relative w-28 h-28 mx-auto flex items-center justify-center">
+                    <svg class="w-24 h-24 text-cyber-pink neon-glow-pink animate-pulse" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                    <svg class="w-28 h-28 text-cyber-cyan absolute inset-0" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9" stroke-dasharray="4 2"/>
+                        <path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
+                    </svg>
+                </div>
+
+                <div class="p-4 bg-cyber-card rounded-xl border border-cyber-lime text-cyber-lime font-mono text-xs md:text-sm leading-snug">
+                    "L'attenzione verso la persona è la prima forma di rispetto e di amore."
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-white/10 font-mono text-xs">
+            <a href="#slide-1" class="text-gray-400 hover:underline">&larr; BACK</a>
+            <a href="#slide-3" class="text-cyber-cyan font-bold hover:underline">VAI ALL'ATTIVITÀ &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: ATTIVITÀ PRATICA IN CLASSE (3 MIN) -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-cyber-bg text-white">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-cyber-cyan/30 pb-4 font-mono text-xs">
+            <span class="text-cyber-cyan font-bold uppercase tracking-wider">// ATTIVITÀ IN CLASSE</span>
+            <span class="text-gray-400">Slide 3 di 4</span>
+        </div>
+
+        <!-- Interactive Activity -->
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Instructions -->
+            <div class="md:col-span-6 space-y-5">
+                <div>
+                    <span class="bg-cyber-lime text-black font-mono font-black text-xs px-3 py-1 uppercase">
+                        ATTIVITÀ PRATICA
+                    </span>
+                    <h2 class="text-3xl font-black uppercase text-white mt-2">Gli Occhi dell'Altro</h2>
+                </div>
+
+                <ol class="space-y-3 font-mono text-xs md:text-sm text-gray-300">
+                    <li class="flex items-start gap-2 bg-cyber-card p-3 rounded-lg border border-gray-800">
+                        <span class="text-cyber-cyan font-bold">1.</span>
+                        <span>Girati verso il tuo compagno/la tua compagna di banco.</span>
+                    </li>
+                    <li class="flex items-start gap-2 bg-cyber-card p-3 rounded-lg border border-gray-800">
+                        <span class="text-cyber-cyan font-bold">2.</span>
+                        <span>Per <strong>45 secondi</strong>, guardatevi negli occhi in totale silenzio.</span>
+                    </li>
+                    <li class="flex items-start gap-2 bg-cyber-card p-3 rounded-lg border border-gray-800">
+                        <span class="text-cyber-pink font-bold">3.</span>
+                        <span>Scrivi su un foglio un pensiero positivo o una qualità che vedi in lui/lei, poi consegnaglielo con un sorriso.</span>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Timer Dashboard HUD -->
+            <div class="md:col-span-6 bg-cyber-card p-6 rounded-2xl hud-border text-center space-y-6 relative overflow-hidden">
+                <div class="absolute inset-x-0 bottom-0 opacity-10 flex justify-between px-8 pointer-events-none">
+                    <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    <svg class="w-24 h-24 text-white transform scale-x-[-1]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </div>
+
+                <span class="text-xs font-mono text-cyber-cyan font-bold uppercase block">// TIMER SCANNER VISIVO</span>
+
+                <div class="bg-black p-6 rounded-xl border-2 border-cyber-lime relative z-10">
+                    <div id="timer-display" class="text-5xl md:text-7xl font-mono font-black text-cyber-lime tracking-widest">
+                        00:45
+                    </div>
+                    <span id="timer-status" class="text-xs font-mono text-gray-400 block mt-2 uppercase">
+                        FASE 1: Contatto visivo in silenzio
+                    </span>
+                </div>
+
+                <button onclick="startVisualScan()" id="start-btn" class="relative z-10 w-full py-4 bg-cyber-cyan text-black font-mono font-black text-sm uppercase tracking-widest hover:bg-cyber-lime transition transform active:scale-95 shadow-[4px_4px_0px_0px_rgba(255,0,127,1)]">
+                    ▶ START SCANNER (45 SEC)
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-white/10 font-mono text-xs">
+            <a href="#slide-2" class="text-gray-400 hover:underline">&larr; BACK</a>
+            <a href="#slide-4" class="text-cyber-cyan font-bold hover:underline">PAROLA GUIDA &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: LA PAROLA DI DON BOSCO / PAROLA GUIDA (1-2 MIN) -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-cyber-card text-white">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-cyber-cyan/30 pb-4 font-mono text-xs">
+            <span class="text-cyber-lime font-bold uppercase tracking-wider">// RIFLESSIONE FINALE</span>
+            <span class="text-gray-400">Slide 4 di 4</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="my-auto max-w-3xl mx-auto text-center space-y-6">
+            
+            <!-- Immagine di Gesù in Slide 4 (Wikipedia Commons) -->
+            <div class="w-24 h-24 mx-auto p-1 bg-cyber-bg rounded-full border-2 border-cyber-cyan neon-glow flex items-center justify-center overflow-hidden">
+                <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60NIpcfDFPs9ywP2_bOMx8KI6bUqMnXa24_n-Yy37Sul5iTT0Y5YZiS4&s=10" 
+                    class="w-full h-full object-cover object-top rounded-full contrast-125 brightness-90"
+                >
+            </div>
+
+            <div class="inline-block bg-cyber-pink text-white font-mono font-bold text-xs uppercase px-4 py-1">
+                PAROLA DEL GIORNO
+            </div>
+
+            <blockquote class="space-y-4">
+                <p class="text-3xl md:text-6xl font-black uppercase text-cyber-cyan leading-tight">
+                    "Gesù, fissatolo, <br><span class="text-cyber-lime underline decoration-cyber-pink">lo amò.</span>"
+                </p>
+                <cite class="block text-sm font-mono tracking-widest text-gray-400 uppercase">
+                    — Dal Vangelo secondo Marco 10,21
+                </cite>
+            </blockquote>
+
+            <div class="bg-cyber-bg p-6 rounded-2xl border border-cyber-cyan text-left font-mono space-y-2 max-w-xl mx-auto">
+                <span class="text-cyber-lime text-xs font-bold block uppercase">// IMPEGNO PER OGGI:</span>
+                <p class="text-sm text-gray-300 leading-relaxed">
+                    Ricordiamoci che ogni persona che incrociamo oggi nei corridoi o in classe merita uno sguardo limpido, attento e pieno di rispetto.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-white/10 font-mono text-xs">
+            <a href="#slide-3" class="text-gray-400 hover:underline">&larr; BACK</a>
+            <span class="text-cyber-lime font-black">BUONA GIORNATA A TUTTI! 👁️✨</span>
+        </div>
+    </section>
+
+    <!-- SCRIPT TIMER INTERATTIVO -->
+    <script>
+        let timeLeft = 45;
+        let timerInterval = null;
+        let isWritingPhase = false;
+
+        function startVisualScan() {
+            const btn = document.getElementById('start-btn');
+            const display = document.getElementById('timer-display');
+            const status = document.getElementById('timer-status');
+
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                
+                let seconds = timeLeft < 10 ? '0' + timeLeft : timeLeft;
+                display.textContent = `00:${seconds}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    if (!isWritingPhase) {
+                        isWritingPhase = true;
+                        timeLeft = 90;
+                        display.textContent = "01:30";
+                        display.classList.remove('text-cyber-lime');
+                        display.classList.add('text-cyber-pink');
+                        status.textContent = "FASE 2: Scrivi e consegna il foglietto positivo!";
+                        
+                        timerInterval = setInterval(() => {
+                            timeLeft--;
+                            let mins = Math.floor(timeLeft / 60);
+                            let secs = timeLeft % 60;
+                            let formattedSecs = secs < 10 ? '0' + secs : secs;
+                            display.textContent = `0${mins}:${formattedSecs}`;
+
+                            if (timeLeft <= 0) {
+                                clearInterval(timerInterval);
+                                display.textContent = "FATTO! ✅";
+                                status.textContent = "Attività completata. Consegnate i messaggi!";
+                            }
+                        }, 1000);
+                    }
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
