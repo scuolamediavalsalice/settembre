@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 16 settembre</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pop: {
+                            yellow: '#FFE600',
+                            pink: '#FF007A',
+                            dark: '#121212',
+                            gray: '#242424',
+                            light: '#F5F5F7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Impact', 'Arial Black', 'sans-serif'],
+                        body: ['ui-sans-serif', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1.5px #FFE600;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-pop-dark text-white font-body antialiased overflow-x-hidden">
+
+    <!-- SLIDE 1: COPERTINA POP URBAN -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-dark relative border-b-8 border-pop-yellow">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-white/20 pb-4">
+            <span class="text-xs md:text-sm uppercase font-black tracking-widest text-pop-yellow bg-white/10 px-3 py-1 rounded-full">
+                Scuola media Valsalice
+            </span>
+            <span class="text-xs md:text-sm font-mono text-gray-400">03 / Settimana 1</span>
+        </div>
+
+        <!-- Main Content Titolo Gigante -->
+        <div class="my-auto max-w-5xl mx-auto space-y-6 text-left">
+            <div class="inline-block bg-pop-pink text-black text-xs md:text-sm font-black uppercase px-3 py-1 -rotate-2">
+                Sfida al multitasking
+            </div>
+            
+            <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-none">
+                LA MONO<br><span class="text-pop-yellow text-stroke">PENNA</span>
+            </h1>
+
+            <p class="text-xl md:text-3xl font-bold text-gray-300 max-w-2xl leading-tight">
+                Fare <span class="text-pop-yellow underline">una sola cosa</span> alla volta è il superpotere più grande del XXI secolo.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-white/10 text-xs font-mono text-gray-400">
+            <span>Concentrazione vs distrazione</span>
+            <a href="#slide-2" class="text-pop-yellow font-black hover:underline flex items-center gap-1 uppercase">
+                Smonta il trick &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: IL GANCIO (L'ILLUSIONE DEL MULTITASKING) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-yellow text-pop-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-black/20 pb-4">
+            <span class="text-xs md:text-sm font-black uppercase tracking-wider text-pop-dark">Attenzione!</span>
+            <span class="text-xs md:text-sm font-mono text-black/60">Slide 2 di 4</span>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="my-auto max-w-5xl mx-auto grid md:grid-cols-12 gap-8 items-center">
+            <!-- Left Text -->
+            <div class="md:col-span-7 space-y-6">
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight leading-none">
+                    Il tuo cervello <span class="bg-black text-pop-yellow px-2">NON</span> è un computer!
+                </h2>
+                
+                <div class="text-lg md:text-xl font-medium text-black/80 space-y-4 leading-relaxed">
+                    <p>
+                        Crediamo di poter chattare, ascoltare la spiegazione, guardare notifiche e fare i compiti contemporaneamente.
+                    </p>
+                    <p>
+                        Scienza alla mano: il multitasking cognitivo <strong>non esiste</strong>.<br>Il tuo cervello sta solo saltando da un compito all'altro<br>alla velocità della luce, consumando un'energia enorme<br>e lasciandoti svuotato.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Box High-Contrast -->
+            <div class="md:col-span-5 bg-black text-white p-8 rounded-none border-4 border-pop-pink shadow-[8px_8px_0px_0px_rgba(255,0,122,1)] space-y-4">
+                <span class="text-xs font-mono font-bold uppercase tracking-widest text-pop-pink block">// PROVA DI REALITÀ</span>
+                <p class="text-2xl font-black uppercase leading-tight text-pop-yellow">
+                    "Chi insegue due lepri contemporaneamente non ne cattura nessuna."
+                </p>
+                <span class="block text-xs text-gray-400 font-mono">— Proverbio antico</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-black/10 text-xs font-bold text-black">
+            <a href="#slide-1" class="hover:underline">&larr; Indietro</a>
+            <a href="#slide-3" class="bg-black text-pop-yellow px-4 py-2 font-black uppercase hover:bg-pop-pink hover:text-white transition">
+                Fai il test in classe &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: SFIDA PRATICA (CERCHIO VS QUADRATO ASINCRONO) -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-dark text-white">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-white/20 pb-4">
+            <span class="text-xs md:text-sm font-mono font-bold uppercase tracking-wider text-pop-pink">Cerchio vs Quadrato</span>
+            <span class="text-xs md:text-sm font-mono text-gray-400">Slide 3 di 4</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="my-auto max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            <!-- Rules -->
+            <div class="md:col-span-6 space-y-6">
+                <span class="bg-pop-yellow text-black px-3 py-1 text-xs font-black uppercase">Sfida del giorno</span>
+                <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Geometria impossibile</h2>
+
+                <ol class="space-y-4 text-gray-300 font-medium text-base">
+                    <li class="flex items-start gap-4">
+                        <span class="w-8 h-8 bg-pop-pink text-black font-black flex items-center justify-center text-lg flex-shrink-0">1</span>
+                        <span>Prendi <strong>due penne</strong> e impugna una con la mano destra e l'altra con la mano sinistra.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="w-8 h-8 bg-pop-pink text-black font-black flex items-center justify-center text-lg flex-shrink-0">2</span>
+                        <span>Mentre la mano dominante disegna <strong class="text-pop-yellow">cerchi</strong>, l'altra deve disegnare <strong class="text-pop-pink">quadrati</strong>.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="w-8 h-8 bg-pop-pink text-black font-black flex items-center justify-center text-lg flex-shrink-0">3</span>
+                        <span>Regola: la velocità deve essere costante e le due penne non devono fermarsi mai. Prova a farlo per 45 secondi!</span>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Interattivo: Click Counter Distrazioni -->
+            <div class="md:col-span-6 bg-pop-gray p-8 rounded-3xl border-2 border-pop-yellow text-center space-y-6 shadow-[10px_10px_0px_0px_rgba(255,230,0,1)]">
+                <div class="text-xs font-mono uppercase text-gray-400 tracking-widest">Timer sfida impossibile</div>
+                <div id="timer-display" class="text-6xl font-black text-pop-yellow font-mono">00:45</div>
+                
+                <div class="flex justify-center gap-3">
+                    <button onclick="startTimer()" id="btn-start" class="px-6 py-3 bg-pop-yellow hover:bg-white text-black font-black uppercase text-sm transition">
+                        AVVIA SFIDA
+                    </button>
+                    <button onclick="resetTimer()" class="px-4 py-3 bg-white/10 hover:bg-white/20 text-white font-mono text-xs">
+                        RESET
+                    </button>
+                </div>
+
+                <hr class="border-white/10">
+
+                <!-- Contatore di errori per la classe -->
+                <div class="space-y-2">
+                    <span class="text-xs font-mono text-gray-400 uppercase">Quanti quadrati sono diventati cerchi?</span>
+                    <div class="flex items-center justify-center gap-4">
+                        <button onclick="changeCounter(-1)" class="w-10 h-10 bg-white/10 text-white font-black text-xl hover:bg-pop-pink">-</button>
+                        <span id="distraction-count" class="text-4xl font-black text-pop-pink font-mono">0</span>
+                        <button onclick="changeCounter(1)" class="w-10 h-10 bg-white/10 text-white font-black text-xl hover:bg-pop-pink">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-white/10 text-xs font-mono text-gray-400">
+            <a href="#slide-2" class="hover:underline">&larr; Indietro</a>
+            <a href="#slide-4" class="text-pop-yellow font-black uppercase hover:underline">Vedi il pensiero finale &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: PAROLA GUIDA SALESIANA -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-pink text-black">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b border-black/20 pb-4">
+            <span class="text-xs md:text-sm font-black uppercase tracking-wider">Il valore della presenza</span>
+            <span class="text-xs md:text-sm font-mono text-black/60">Slide 4 di 4</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="my-auto max-w-4xl mx-auto text-center space-y-8">
+            <div class="inline-block bg-black text-pop-yellow font-mono text-xs uppercase px-3 py-1 font-bold">
+                ASCOLTA
+            </div>
+
+            <blockquote class="space-y-4">
+                <p class="text-4xl md:text-6xl font-black uppercase tracking-tight leading-none text-black">
+                   "La santità non consiste nel fare cose straordinarie, ma nel fare le cose ordinarie con straordinario amore."
+                </p>
+            </blockquote>
+
+            <div class="bg-black text-white p-6 rounded-2xl max-w-xl mx-auto text-left space-y-2">
+                <span class="text-pop-yellow text-xs font-mono font-bold uppercase">// CUSTODISCI IL TEMPO</span>
+                <p class="text-base font-medium text-gray-200">
+                    Quando parli con un compagno, ascoltalo al 100%. Quando studi, studia al 100%. Quando giochi, gioca al 100%. Sii interamente presente in quello che fai.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-black/20 text-xs font-bold uppercase">
+            <a href="#slide-3" class="hover:underline">&larr; Indietro</a>
+            <span class="bg-black text-pop-yellow px-3 py-1 font-black">Buon lavoro in classe!</span>
+        </div>
+    </section>
+
+    <!-- TIMER & COUNTER SCRIPT -->
+    <script>
+        let timeLeft = 45;
+        let timerInterval = null;
+        let distractionCount = 0;
+
+        function updateDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            const displayMinutes = minutes < 10 ? '0' + minutes : minutes;
+            const displaySeconds = seconds < 10 ? '0' + seconds : seconds;
+            document.getElementById('timer-display').textContent = `${displayMinutes}:${displaySeconds}`;
+        }
+
+        function startTimer() {
+            if (timerInterval) return;
+            document.getElementById('btn-start').classList.add('opacity-50', 'cursor-not-allowed');
+            
+            timerInterval = setInterval(() => {
+                if (timeLeft > 0) {
+                    timeLeft--;
+                    updateDisplay();
+                } else {
+                    clearInterval(timerInterval);
+                    timerInterval = null;
+                    document.getElementById('timer-display').textContent = "STOP!";
+                    document.getElementById('btn-start').classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+            }, 1000);
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            timerInterval = null;
+            timeLeft = 45;
+            updateDisplay();
+            document.getElementById('btn-start').classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+
+        function changeCounter(val) {
+            distractionCount = Math.max(0, distractionCount + val);
+            document.getElementById('distraction-count').textContent = distractionCount;
+        }
+    </script>
+</body>
+</html>
