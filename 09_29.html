@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 29 settembre</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        light: {
+                            bg: '#FDFBF7',         /* Soft Warm Cream */
+                            card: '#FFFFFF',       /* Pure White */
+                            dark: '#1C1917',       /* Stone Dark */
+                            terracotta: '#E07A5F',/* Warm Bread Terracotta */
+                            sun: '#F2CC8F',        /* Soft Gold / Sun */
+                            cyan: '#3D405B',       /* Slate Blue Accent */
+                            emerald: '#81B29A'     /* Soft Sage Green */
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['ui-monospace', 'monospace'],
+                        sans: ['Trebuchet MS', 'Arial Black', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .clean-border {
+            border: 3px solid #1C1917;
+        }
+        .pop-shadow {
+            box-shadow: 6px 6px 0px 0px #1C1917;
+        }
+        .pop-shadow-terracotta {
+            box-shadow: 6px 6px 0px 0px #E07A5F;
+        }
+        .glow-pulse {
+            animation: pulse-word 3s infinite ease-in-out;
+        }
+        @keyframes pulse-word {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(224, 122, 95, 0.4)); }
+            50% { transform: scale(1.05); filter: drop-shadow(0 0 25px rgba(242, 204, 143, 0.8)); }
+        }
+    </style>
+</head>
+<body class="bg-light-bg text-light-dark font-sans antialiased overflow-x-hidden selection:bg-light-terracotta selection:text-white">
+
+    <!-- SLIDE 1: COPERTINA E TITOLO -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-light-bg relative border-b-8 border-light-dark">
+        <!-- Header HUD -->
+        <div class="flex justify-between items-center border-b-4 border-light-dark pb-4 font-mono text-xs md:text-sm font-black">
+            <span class="bg-light-dark text-white px-3 py-1 uppercase tracking-widest">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="text-light-terracotta tracking-widest uppercase">
+                [ SETTIMANA 03 // MARTEDì ]
+            </span>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="my-auto max-w-5xl mx-auto grid md:grid-cols-12 gap-8 items-center w-full">
+            
+            <!-- Left Info -->
+            <div class="md:col-span-7 space-y-6 text-left">
+                <span class="bg-light-sun text-light-dark font-mono font-black text-xs px-3 py-1 uppercase clean-border inline-block rotate-1">
+                    🍞 L'EUCARISTIA COME DONO
+                </span>
+
+                <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tight leading-none text-light-dark">
+                    L'ATTENZIONE <br>COME <span class="bg-light-terracotta text-white px-3 inline-block clean-border -rotate-1">PREGHIERA</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl font-mono text-light-cyan font-bold uppercase tracking-wide">
+                    La preghiera è l'attenzione del cuore orientata a Dio.
+                </p>
+            </div>
+
+            <!-- Right Graphic -->
+            <div class="md:col-span-5 relative">
+                <div class="relative rounded-2xl overflow-hidden clean-border pop-shadow h-72 md:h-80 bg-white">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Pane spezzato" class="w-full h-full object-cover">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-4 text-white">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-light-sun text-light-dark rounded-xl clean-border">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M12 3v18M5 8c2 0 3 1 4 2s2 1 3 0M12 10c1-1 2-2 4-2s3 1 3 2"/>
+                                    <circle cx="12" cy="12" r="9" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="font-mono text-xs">
+                                <span class="font-bold text-light-sun uppercase block">PANE SPEZZATO</span>
+                                <span class="opacity-80">Presenza totale per l'altro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-light-dark font-mono text-xs font-bold">
+            <span>MODALITÀ ASCOLTO ATTIVO</span>
+            <a href="#slide-2" class="bg-light-dark text-white px-4 py-2 hover:bg-light-terracotta transition flex items-center gap-1 uppercase">
+                SCOPRI SIMONE WEIL &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: IL GANCIO (1-2 MIN) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-light-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b-4 border-light-dark pb-4 font-mono text-xs font-bold">
+            <span class="text-light-terracotta uppercase tracking-wider">// QUALITà</span>
+            <span class="text-gray-400">Slide 2 di 4</span>
+        </div>
+
+        <!-- Grid Content -->
+        <div class="my-auto max-w-5xl mx-auto grid md:grid-cols-12 gap-8 items-center w-full">
+            
+            <!-- Left Info -->
+            <div class="md:col-span-7 space-y-6">
+                <span class="bg-light-emerald text-white font-mono font-bold text-xs px-3 py-1 uppercase clean-border inline-block">
+                    Oltre le Parole Ripetute
+                </span>
+                
+                <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                    Offrire la propria <br><span class="bg-light-sun px-2 inline-block">presenza.</span>
+                </h2>
+                
+                <blockquote class="p-4 bg-light-bg clean-border pop-shadow-terracotta font-mono text-sm leading-relaxed border-l-8 border-light-terracotta">
+                    "L'attenzione, al suo grado più elevato, è la medesima cosa della preghiera."
+                    <cite class="block text-xs font-bold text-light-terracotta mt-2 uppercase">— Simone Weil (Filosofa)</cite>
+                </blockquote>
+
+                <p class="text-base md:text-lg font-medium text-gray-700 leading-relaxed">
+                    Pregare non significa dire tante parole veloci o formule ripetute a memoria. Significa offrire a Dio e agli altri tutta la propria presenza e il proprio ascolto profondo.
+                </p>
+                
+                <div class="p-3 bg-light-dark text-white rounded-lg font-mono text-xs font-bold uppercase">
+                    💡 <strong>CONCETTO CHIAVE:</strong><br>La qualità del nostro ascolto misura la qualità del nostro amore.
+                </div>
+            </div>
+
+            <!-- Right Photo Box -->
+            <div class="md:col-span-5 relative">
+                <div class="rounded-2xl overflow-hidden clean-border pop-shadow h-80 bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?auto=format&fit=crop&w=800&q=80" alt="Silenzio e ascolto" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-light-dark font-mono text-xs font-bold">
+            <a href="#slide-1" class="text-gray-400 hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-light-dark text-white px-4 py-2 hover:bg-light-terracotta transition uppercase">
+                ATTIVITÀ PRATICA &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: ATTIVITÀ PRATICA IN CLASSE (3 MIN) - NUOVA ATTIVITÀ 11-14 ANNI -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-light-bg text-light-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b-4 border-light-dark pb-4 font-mono text-xs font-bold">
+            <span class="text-light-terracotta uppercase tracking-wider">// SFIDA ESPERIENZIALE A COPPIE</span>
+            <span class="text-gray-400">Slide 3 di 4</span>
+        </div>
+
+        <!-- Main Activity Grid -->
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left instructions -->
+            <div class="md:col-span-5 space-y-4">
+                <div>
+                    <span class="bg-light-terracotta text-white font-mono font-black text-xs px-3 py-1 uppercase clean-border">
+                        ATTIVITÀ ESPERIENZIALE
+                    </span>
+                    <h2 class="text-3xl font-black uppercase mt-2">La Sfida dell'Ascolto Vivo</h2>
+                </div>
+
+                <div class="space-y-3 font-mono text-xs md:text-sm font-bold">
+                    <div class="p-3 bg-white clean-border rounded-lg flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-light-dark text-white flex items-center justify-center text-xs flex-shrink-0">1</span>
+                        <span><strong>GIRATI VERSO IL TUO COMPAGNO:</strong> Mettetevi a coppie (A e B), guardandovi negli occhi.</span>
+                    </div>
+                    <div class="p-3 bg-white clean-border rounded-lg flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-light-terracotta text-white flex items-center justify-center text-xs flex-shrink-0">2</span>
+                        <span><strong>FASE 1 (60 sec):</strong> Il compagno A racconta una sua passione. Il compagno B ascolta in <u>totale silenzio e massima attenzione</u><br>(niente parole o distrazioni).</span>
+                    </div>
+                    <div class="p-3 bg-light-sun clean-border rounded-lg flex items-start gap-3">
+                        <span class="w-6 h-6 rounded-full bg-light-dark text-white flex items-center justify-center text-xs flex-shrink-0">3</span>
+                        <span><strong>FASE 2 (60 sec):</strong> Scambio di ruoli!<br>B racconta, A offre la sua presenza.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Interactive Display: Timer & Visual Box -->
+            <div class="md:col-span-7 bg-white p-6 md:p-8 rounded-2xl clean-border pop-shadow-terracotta text-center space-y-6 relative">
+                
+                <!-- Challenge Spotlight Box -->
+                <div class="py-6 px-4 bg-light-dark rounded-xl border-4 border-light-terracotta text-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-[radial-gradient(#E07A5F_1px,transparent_1px)] [background-size:16px_16px] opacity-20"></div>
+                    <span class="text-xs font-mono text-light-sun uppercase tracking-widest block mb-1">// REGOLE DEL GIOCO</span>
+                    <h3 class="text-2xl md:text-3xl font-black text-white tracking-wide uppercase">
+                        "SEI PRESENTE AL 100%?"
+                    </h3>
+                    <p class="text-light-sun font-mono text-xs mt-2">
+                        Guarda negli occhi • Non interrompere • Dona la tua attenzione
+                    </p>
+                </div>
+
+                <!-- Timer Section -->
+                <div class="flex items-center justify-between p-4 bg-light-bg clean-border rounded-xl">
+                    <div class="text-left font-mono">
+                        <span id="timer-status" class="text-xs text-gray-500 font-bold uppercase block">TIMER SFIDA ASCOLTO</span>
+                        <span id="ascolto-timer" class="text-3xl font-black text-light-terracotta">01:00</span>
+                    </div>
+
+                    <button onclick="startAscoltoTimer()" id="ascolto-btn" class="px-5 py-3 bg-light-terracotta text-white font-mono font-black text-xs uppercase tracking-widest hover:bg-light-dark transition clean-border pop-shadow">
+                        ▶ AVVIA (60 SEC)
+                    </button>
+                </div>
+                
+                <p class="text-xs font-mono text-gray-500 italic">
+                    💡 Alla fine chiedetevi: "Come ti sei sentito mentre l'altro ti regalava tutta la sua attenzione?"
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-light-dark font-mono text-xs font-bold">
+            <a href="#slide-2" class="text-gray-400 hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-light-dark text-white px-4 py-2 hover:bg-light-terracotta transition uppercase">
+                PAROLA GUIDA &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: LA PAROLA DI DON BOSCO / RIFLESSIONE E PREGHIERA FINALE -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-light-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b-4 border-light-dark pb-4 font-mono text-xs font-bold">
+            <span class="text-light-terracotta uppercase tracking-wider">// RIFLESSIONE</span>
+            <span class="text-gray-400">Slide 4 di 4</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="my-auto max-w-4xl mx-auto text-center space-y-6 w-full">
+            <span class="bg-light-sun text-light-dark font-mono font-black text-xs px-3 py-1 uppercase clean-border inline-block rotate-1">
+                ✨ BRILLIAMO INSIEME
+            </span>
+
+            <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                "Servite il Signore in allegria <br>e con <span class="bg-light-terracotta text-white px-3 inline-block clean-border -rotate-1">tutto il cuore</span>."
+            </h2>
+
+            <div class="p-6 bg-light-bg clean-border pop-shadow max-w-2xl mx-auto rounded-2xl text-left space-y-4">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">🙏</span>
+                    <h3 class="font-mono font-black text-sm uppercase text-light-terracotta">Preghiera del Mattino</h3>
+                </div>
+                <p class="font-mono text-xs md:text-sm leading-relaxed text-gray-800">
+                    Signore Gesù, ti offriamo questo giorno.<br>
+                    Insegnavci ad essere come il pane spezzato: presenti, disponibili e attenti a chi ci vive accanto.<br>
+                    Aiutaci a fare di ogni nostro gesto d'ascolto una preghiera sincera. Amen.
+                </p>
+            </div>
+
+            <div class="pt-2">
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-light-dark font-mono text-xs font-bold">
+            <a href="#slide-3" class="text-gray-400 hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-1" class="bg-light-dark text-white px-4 py-2 hover:bg-light-terracotta transition uppercase">
+                TORNA ALL'INIZIO ↺
+            </a>
+        </div>
+    </section>
+
+    <!-- Script Timer per la Slide 3 -->
+    <script>
+        let timerInterval;
+        let timeLeft = 60;
+
+        function startAscoltoTimer() {
+            clearInterval(timerInterval);
+            timeLeft = 60;
+            const timerDisplay = document.getElementById('ascolto-timer');
+            const statusDisplay = document.getElementById('timer-status');
+            const btn = document.getElementById('ascolto-btn');
+
+            btn.disabled = true;
+            btn.classList.add('opacity-50');
+            statusDisplay.innerText = "TEMPO DI ASCOLTO IN CORSO...";
+
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                let seconds = timeLeft < 10 ? '0' + timeLeft : timeLeft;
+                timerDisplay.innerText = `00:${seconds}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    timerDisplay.innerText = "00:00";
+                    statusDisplay.innerText = "TEMPO SCADUTO! SCAMBIO DI RUOLO";
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-50');
+                    btn.innerText = "▶ RIPARTI (60 SEC)";
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
