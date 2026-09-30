@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 30 settembre - L'attenzione che accende la bontà</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bright: {
+                            bg: '#FBF9F1',        /* Soft Cream White */
+                            card: '#FFFFFF',      /* Pure White */
+                            dark: '#18181B',      /* Ink Black */
+                            emerald: '#059669',   /* Care Emerald Green */
+                            orange: '#F97316',    /* Action Orange */
+                            yellow: '#FEF08A'     /* Highlight Yellow */
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['ui-monospace', 'monospace'],
+                        sans: ['Trebuchet MS', 'Arial Black', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-shadow {
+            box-shadow: 6px 6px 0px 0px #18181B;
+        }
+        .pop-shadow-orange {
+            box-shadow: 6px 6px 0px 0px #F97316;
+        }
+        .pop-shadow-emerald {
+            box-shadow: 6px 6px 0px 0px #059669;
+        }
+        .street-border {
+            border: 3.5px solid #18181B;
+        }
+    </style>
+</head>
+<body class="bg-bright-bg text-bright-dark font-sans antialiased overflow-x-hidden selection:bg-bright-orange selection:text-white">
+
+   <!-- SLIDE 1: SOLO VIDEO A TUTTO SCHERMO -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-bright-bg relative border-b-8 border-bright-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b-4 border-bright-dark pb-4 font-mono text-xs md:text-sm font-black">
+            <span class="bg-bright-dark text-white px-3 py-1 uppercase tracking-widest rounded-none">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="text-bright-orange tracking-widest uppercase">
+                [ MERCOLEDÌ 30 SETTEMBRE ]
+            </span>
+        </div>
+
+        <!-- Main Video Container -->
+        <div class="my-auto max-w-4xl mx-auto w-full space-y-4">
+            <div class="flex justify-between items-center font-mono">
+                <span class="bg-bright-yellow text-bright-dark font-black text-xs px-3 py-1 uppercase street-border inline-block -rotate-1">
+                    🎬 PREMI PLAY
+                </span>
+                <span class="text-xs font-bold text-gray-500 uppercase">
+                    DURATA: 2 MIN
+                </span>
+            </div>
+
+            <!-- Video Player Box -->
+            <a href="https://www.youtube.com/watch?v=WN18kGdPHzk" target="_blank" rel="noopener noreferrer" class="group relative block w-full aspect-video rounded-2xl overflow-hidden street-border pop-shadow bg-black">
+                <img src="https://img.youtube.com/vi/WN18kGdPHzk/hqdefault.jpg" alt="Give In To Giving Video" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-90 group-hover:opacity-100">
+                
+                <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition flex flex-col justify-between p-6">
+                    <span class="bg-red-600 text-white font-mono font-bold text-xs px-3 py-1 rounded-md w-max uppercase tracking-wider flex items-center gap-1.5 street-border">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        Guarda su YouTube
+                    </span>
+
+                    <div class="self-center flex flex-col items-center gap-3">
+                        <div class="w-20 h-20 md:w-24 md:h-24 bg-bright-orange text-white rounded-full flex items-center justify-center street-border group-hover:scale-110 group-hover:bg-bright-emerald transition shadow-lg">
+                            <svg class="w-10 h-10 md:w-12 md:h-12 fill-current ml-1" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/80 backdrop-blur-sm p-3 rounded-xl border border-white/20 text-center">
+                        <span class="text-white text-sm font-mono font-bold block">
+                            "Give In To Giving" ↗
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-bright-dark font-mono text-xs font-bold">
+            <span>GUARDA IL VIDEO PER COMINCIARE</span>
+            <a href="#slide-2" class="bg-bright-dark text-white px-4 py-2 hover:bg-bright-emerald transition flex items-center gap-1 uppercase">
+                ENTRA NELLA DOMANDA &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: ESPLORAZIONE ED ESPERIENZA (DOMANDE APERTE) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-bright-dark border-b-8 border-bright-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b-4 border-bright-dark pb-4 font-mono text-xs font-bold">
+            <span class="text-bright-orange uppercase tracking-wider">// ESPLORAZIONE INSIEME</span>
+            <span class="text-gray-400">Slide 2 di 4</span>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="my-auto max-w-5xl mx-auto space-y-6 w-full">
+            <div class="space-y-3">
+                <span class="bg-bright-emerald text-white font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                    🤔 COSA ABBIAMO VISTO DAVVERO?
+                </span>
+                
+                <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                    Perché quel mondo era <span class="bg-bright-dark text-white px-3 inline-block street-border">GRIGIO</span>?
+                </h2>
+            </div>
+
+            <!-- Domande Guida -->
+            <div class="space-y-4 font-mono text-xs md:text-sm font-bold">
+                <div class="p-4 bg-bright-bg street-border pop-shadow rounded-xl flex items-center gap-4">
+                    <span class="w-8 h-8 rounded-full bg-bright-orange text-white flex items-center justify-center text-sm flex-shrink-0 street-border">1</span>
+                    <span class="text-base font-sans font-bold">Cosa rende il protagonista così "trasparente" e spento all'inizio?</span>
+                </div>
+
+                <div class="p-4 bg-bright-bg street-border pop-shadow rounded-xl flex items-center gap-4">
+                    <span class="w-8 h-8 rounded-full bg-bright-orange text-white flex items-center justify-center text-sm flex-shrink-0 street-border">2</span>
+                    <span class="text-base font-sans font-bold">Qual è il preciso istante in cui scatta la scintilla?</span>
+                </div>
+
+                <div class="p-4 bg-bright-bg street-border pop-shadow rounded-xl flex items-center gap-4">
+                    <span class="w-8 h-8 rounded-full bg-bright-orange text-white flex items-center justify-center text-sm flex-shrink-0 street-border">3</span>
+                    <span class="text-base font-sans font-bold">È cambiato l'ambiente intorno o è cambiato il suo modo di guardare?</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-bright-dark font-mono text-xs font-bold">
+            <a href="#slide-1" class="text-gray-400 hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-bright-dark text-white px-4 py-2 hover:bg-bright-orange transition uppercase">
+                DALLO SCHERMO ALLA REALTÀ &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: ATTUALIZZAZIONE ED ESPERIENZA PERSONALE -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-bright-bg text-bright-dark border-b-8 border-bright-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b-4 border-bright-dark pb-4 font-mono text-xs font-bold">
+            <span class="text-bright-emerald uppercase tracking-wider">// CONNESSIONE QUOTIDIANA</span>
+            <span class="text-gray-400">Slide 3 di 4</span>
+        </div>
+
+        <!-- Content -->
+        <div class="my-auto max-w-4xl mx-auto w-full bg-white p-6 md:p-10 rounded-2xl street-border pop-shadow-emerald text-center space-y-6">
+            <span class="bg-bright-yellow text-bright-dark font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                ⚡ SFIDA PER LO SGUARDO
+            </span>
+
+            <h2 class="text-3xl md:text-5xl font-black uppercase text-bright-dark tracking-tight">
+                L'ATTENZIONE È <span class="bg-bright-orange text-white px-2 inline-block street-border -rotate-1">PREZIOSA</span>
+            </h2>
+
+            <p class="text-base md:text-xl font-medium text-gray-800 leading-relaxed max-w-2xl mx-auto">
+                Cosa cambia dentro di noi quando smettiamo<br>di vivere sbadati e indifferenti?
+            </p>
+
+            <div class="p-4 bg-bright-yellow street-border pop-shadow font-mono text-sm md:text-base font-black text-bright-dark">
+                💡 Dare attenzioni ti fa uscire dal grigio e accende la bontà!
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-bright-dark font-mono text-xs font-bold">
+            <a href="#slide-2" class="text-gray-400 hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-bright-dark text-white px-4 py-2 hover:bg-bright-emerald transition uppercase">
+                SINTESI CARISMATICA &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: SINTESI CARISMATICA & IMPEGNO / SFIDA DEL GIORNO -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-bright-dark">
+        <!-- Header -->
+        <div class="flex justify-between items-center border-b-4 border-bright-dark pb-4 font-mono text-xs font-bold">
+            <span class="text-bright-orange uppercase tracking-wider">// INQUADRAMENTO CARISMATICO</span>
+            <span class="text-gray-400">Slide 4 di 4</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="my-auto max-w-4xl mx-auto text-center space-y-8">
+            
+            <div class="inline-block bg-bright-dark text-white font-mono font-black text-xs uppercase px-4 py-1 street-border">
+                MOTORE DELLA MISSIONE QUOTIDIANA
+            </div>
+
+            <blockquote class="space-y-4">
+                <p class="text-3xl md:text-6xl font-black uppercase leading-tight text-bright-dark">
+                    Non si può fare del bene se non si impara prima a <span class="bg-bright-yellow px-3 text-bright-dark street-border inline-block rotate-1">NOTARE</span> chi ci sta accanto.
+                </p>
+            </blockquote>
+
+                       </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-bright-dark font-mono text-xs font-bold">
+            <a href="#slide-3" class="text-gray-400 hover:underline">&larr; INDIETRO</a>
+            <span class="text-bright-emerald font-black text-sm uppercase">ACCENDI LO SGUARDO! ✨</span>
+        </div>
+    </section>
+
+</body>
+</html>
